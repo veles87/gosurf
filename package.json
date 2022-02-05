@@ -1,0 +1,24 @@
+{
+  "name": "gosurf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veles87/gosurf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://veles87.github.io/gosurf",
+  "bugs": {
+    "url": "https://github.com/veles87/gosurf/issues"
+  },
+  "homepage": "https://github.com/veles87/gosurf#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
