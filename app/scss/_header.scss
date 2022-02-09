@@ -21,6 +21,7 @@
         bottom: 116px;
         text-align: right;
         color: #fff;
+        text-transform: uppercase;
     }
 
     &__info-suptitle {
@@ -32,15 +33,38 @@
         font-weight: 800;
         font-size: 80px;
         line-height: 107%;
+        margin-top: 5px;
+        margin-bottom: 50px;
     }
 
     &__info-suptext {
     }
 
     &__info-text {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 150%;
+        margin-top: 8px;
+        margin-bottom: 15px;
     }
 
     &__info-link {
+    }
+}
+.slider-arrows{
+    position: absolute;
+    content: "";
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+
+    &__left{
+        right: 125px;
+    }
+    &__right{
+
     }
 }
 
