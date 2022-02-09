@@ -183,6 +183,7 @@ sup {
 
 img {
   border-style: none;
+  margin: 0;
 }
 
 /* Forms
@@ -472,17 +473,16 @@ template {
 {
     float: right;
 }
-.slick-slide img
-{
-    display: block;
-}
+
 .slick-slide.slick-loading img
 {
     display: none;
+    margin: 0;
 }
 .slick-slide.dragging img
 {
     pointer-events: none;
+    margin: 0;
 }
 .slick-initialized .slick-slide
 {
@@ -502,4 +502,34 @@ template {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.suptitle-left {
+  font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 145%;
+letter-spacing: 7.33333px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.5;
+
+padding-left: 103px;
+position: relative;
+display: inline-block;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    opacity: .5;
+    left: 0;
+    top: 50%;
+  }
 }

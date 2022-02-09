@@ -1,1 +1,1 @@
-.header__slider-item{height:100vh;background-image:url(../images/bg/Background-1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center}
+.header__slider-item{position:relative;height:100vh;background-image:url(../images/bg/Background-1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center}.slider-item__info{position:absolute;right:80px;bottom:116px;text-align:right;color:#fff}.slider-item__info-title{font-family:Fira Sans;font-style:normal;font-weight:800;font-size:80px;line-height:107%}
