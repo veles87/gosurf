@@ -54,6 +54,7 @@ function scripts() {
 function styles() {
     return src([
     'node_modules/slick-slider/slick/slick.scss',
+    'node_modules/animate.css/animate.css',
     'app/scss/style.scss'])
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
