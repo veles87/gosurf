@@ -2,39 +2,45 @@ $green: #4AF6CD;
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
   }
   
-  html, body, div, span, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  abbr, address, cite, code,
-  del, dfn, em, img, ins, kbd, q, samp,
-  small, strong, sub, sup, var,
-  b, i,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section, summary,
-  time, mark, audio, video {
-      margin:0;
-      padding:0;
-      border:0;
-      outline:0;
-      font-size:100%;
-      vertical-align:baseline;
-      background:transparent;
-  }
+  // html, body, div, span, object, iframe,
+  // h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  // abbr, address, cite, code,
+  // del, dfn, em, img, ins, kbd, q, samp,
+  // small, strong, sub, sup, var,
+  // b, i,
+  // dl, dt, dd, ol, ul, li,
+  // fieldset, form, label, legend,
+  // table, caption, tbody, tfoot, thead, tr, th, td,
+  // article, aside, canvas, details, figcaption, figure,
+  // footer, header, hgroup, menu, nav, section, summary,
+  // time, mark, audio, video {
+  //     margin:0;
+  //     padding:0;
+  //     border:0;
+  //     outline:0;
+  //     font-size:100%;
+  //     vertical-align:baseline;
+  //     background:transparent;
+
+  // }
 
   body {
     margin: 0;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
   }
   
   *,
   *::before,
   *::after{
-      box-sizing: border-box;
+      box-sizing: inherit;
   }
-  nav ul {
+  ul,
+  li {
     list-style:none;
     margin: 0;
     padding: 0;
@@ -86,14 +92,13 @@ textarea {
   margin: 0; /* 2 */
 }
 
-.suptitle-left {
+.headline-left {
     font-family: Fira Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 145%;
     letter-spacing: 7.33333px;
-    text-transform: uppercase;
   
     color: #FFFFFF;
   
@@ -120,3 +125,53 @@ textarea {
     display: inherit;
   }
 
+  .title{
+    span{
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 200px;
+      line-height: 78%;
+      color: rgba(#fff, .02);
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      transform: translateX(-60px);
+    }
+    h3{
+      position: absolute;
+      top: -62px;
+      margin: 0;
+      color: #fff;
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 198%;
+      &::before{
+        content: "";
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 80px;
+        height: 1px;
+        background-color: $green;
+      }
+    }
+  }
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.subtitle{
+  display: inline-block;
+  text-align: right;
+  &__head{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 150%;
+  }
+}
