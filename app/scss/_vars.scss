@@ -46,6 +46,10 @@ html {
     padding: 0;
     text-decoration: none;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   /**
    * Render the `main` element consistently in IE.
    */
@@ -174,4 +178,17 @@ textarea {
     font-size: 40px;
     line-height: 150%;
   }
+}
+
+.r-surf{
+  right: -10px;
+}
+.r-travel{
+  right: 100px;
+}
+.r-sleep{
+  right: 20px;
+}
+.r-shop{
+  right: -5px;
 }
