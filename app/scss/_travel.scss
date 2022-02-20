@@ -1,0 +1,127 @@
+.travel {
+    background-image: url(../images/bg/cocktail.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+    &__slider {
+
+    }
+
+    &__slider-item {
+    }
+    .slider-arrows{
+        position: absolute;
+        opacity: 0.25;
+        top: 225px;
+        right: 75px;
+        cursor: pointer;
+        z-index: 5;
+    
+        &__left{
+            right: 120px;
+        }
+        &__right{
+    
+        }
+    }
+}
+.coctail{
+    padding-bottom: 300px;
+}
+
+.travel-slider {
+
+    &__head {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+
+    &__subtitle {
+        text-align: right;
+        padding: 132px 80px 0 0;
+    }
+
+    &__descr {
+        padding-top: 105px;
+        margin-top: -220px;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-position: right  center;
+            .descr__head{
+                position: relative;
+                padding-right: 78px;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 85px;
+        margin-top: 50px;
+    }
+
+    &__info-item {
+        position: relative;
+        min-height: 200px;
+        margin-bottom: 66px;
+    }
+
+    &__info-subtitle {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 122%;
+        letter-spacing: 8px;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        top: 93.5px;
+        left: -97px;
+        width: 200px;
+        height: 0;
+        text-align: right;
+        position: absolute;
+    }
+
+    &__info-title {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 90%;
+        padding-left: 40px;
+        width: 242px;
+            span{
+                position: absolute;
+                right: 0;
+                bottom: 135px;
+                font-family: Fira Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 257%;
+                letter-spacing: 5.25px;
+                opacity: 0.75;
+            }
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+.subtitle {
+
+    &__head {
+    }
+}
+
+
