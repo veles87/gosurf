@@ -4,6 +4,8 @@
     background-position: bottom right;
     position: relative;
     z-index: 5;
+    padding-top: 120px;
+    padding-bottom: 40px;
     .slider-arrows{
         position: absolute;
         opacity: 0.25;
@@ -19,6 +21,7 @@
     
         }
     }
+
 }
 .sleep-slider {
 
@@ -92,7 +95,7 @@
         width: 242px;
             span{
                 position: absolute;
-                right: 0;
+                right: 25px;
                 bottom: 135px;
                 font-family: Fira Sans;
                 font-style: normal;
@@ -110,6 +113,19 @@
         margin-bottom: 50px;
     }
 }
+
+.sleep__star-list{
+    top: 697px;
+    right: 805px;
+    position: absolute;
+    li{
+        display: inline-block;
+    }
+    img{
+        position: static;
+    }
+}
+
 // .subtitle {
 
 //     &__head {
