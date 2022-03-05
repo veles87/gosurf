@@ -93,19 +93,21 @@
         line-height: 90%;
         padding-left: 40px;
         width: 242px;
-            span{
-                position: absolute;
-                right: 25px;
-                bottom: 135px;
-                font-family: Fira Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 257%;
-                letter-spacing: 5.25px;
-                opacity: 0.75;
-            }
+        position: relative;
+    .sleep-slider__info-title-span{
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 257%;
+        letter-spacing: 5.25px;
+        opacity: 0.75;
+    }        
     }
+
 
     &__btn {
         text-align: center;

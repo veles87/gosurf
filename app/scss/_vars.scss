@@ -237,3 +237,69 @@ textarea {
     }
   }
 }
+
+
+.quantity {
+  display: inline-block;
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+        width: 45px;
+        height: 42px;
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 90%;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+}
+
+.quantity input:focus {
+ 
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+
+  text-align: center;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  top: 55px;
+  right: 25px;
+}
