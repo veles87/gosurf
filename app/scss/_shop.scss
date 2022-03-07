@@ -1,0 +1,53 @@
+
+.shop {
+
+    &__slider {
+    }
+
+    &__slider-item {
+    }
+
+    &__slider-inner {
+    }
+
+    &__slider-info {
+    }
+
+    &__slider-price {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 125%;
+        sup{
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 222%;
+        }
+    }
+    .shop__star-list {
+        li{
+            display: inline-block;
+        }
+        img{
+            position: static;
+        }
+    }
+
+    &__slider-content {
+    }
+    &__btn{
+    }
+}
+.descr {
+
+    &__head {
+    }
+
+    &__head-shop {
+    }
+}
+.headline-right {
+}
