@@ -1,16 +1,27 @@
 
 .shop {
+    background-image: url(../images/bg/shop-image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 260px;
+    margin-bottom: 265px;
 
     &__slider {
+        padding-left: 132px;
     }
 
     &__slider-item {
     }
 
     &__slider-inner {
+        display: flex;
     }
 
     &__slider-info {
+        max-width: 480px;
+        width: 100%;
+        margin-right: 40px;
+        padding-top: 166px;
     }
 
     &__slider-price {
@@ -30,6 +41,7 @@
     .shop__star-list {
         li{
             display: inline-block;
+            margin-left: -23px;
         }
         img{
             position: static;
@@ -37,17 +49,146 @@
     }
 
     &__slider-content {
+        display: flex;
+        align-items: flex-end;
     }
     &__slider-btn{
-    }
-}
-.descr {
-
-    &__head {
+        padding-top: 65px;
     }
 
-    &__head-shop {
+
+		&__slider-content {
+		}
+
+		&__extras {
+            padding-left: 140px;
+		}
+
+		&__extras-title {
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 143%;
+            padding-bottom: 25px;
+		}
+
+		&__extras-inner {
+            display: flex;
+		}
+
+		&__extras-box {
+            text-align: center;
+            margin-right: 57px;
+            cursor: pointer;
+		}
+
+		&__extras-name {
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 122%;
+            text-align: right;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            opacity: 0.5;
+            padding-top: 36px;
+		}
+
+		&__extras-price {
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 222%;
+            text-align: center;
+		}
+.surfboard{
+    position: relative;
+}
+.surfboard-box{
+    position: absolute;
+
+    &__circle{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        position: relative;
+        cursor: pointer;
+        &.active{
+            .circle-row{
+                transform: translate( -50%, -50%) rotate(0deg);
+            }
+        }
     }
 }
-.headline-right {
+.surfboard__position--1{
+    top: 275px;
+    left: 0;
+}
+.surfboard__position--2{
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+.surfboard__position--3{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
+
+.circle-row{
+    position: absolute;
+    background-color: $green;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%) rotate(0deg);
+    & + .circle-row{
+        transform: translate( -50%, -50%) rotate(90deg);
+    }
+
+}
+.surfboard-box__circle.active + .surfboard-title{
+        display: block;
+}
+.surfboard-title {
+    display: none;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    position: absolute;
+    width: 359px;
+    top: -15px;
+    left: 40px;
+    padding-left: 104px;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: #fff;
+        opacity: .5;
+        left: 0;
+        top: 50%;
+        z-index: 10;}
+}
+
+}
+
+.shop__extras-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 105px;
+    margin-bottom: 35px;
+}
+.descr__head-shop{
+    margin-bottom: 30px;
+    max-width: 340px;
 }

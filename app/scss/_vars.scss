@@ -225,7 +225,6 @@ textarea {
 
 .descr{
   display: inline-block;
-  padding-left: 135px;
   &__head{
     font-family: Fira Sans;
     font-style: normal;
@@ -302,4 +301,7 @@ input[type=number]
   position: absolute;
   top: 55px;
   right: 25px;
+}
+.descr-left{
+  padding-left: 135px;
 }

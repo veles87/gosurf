@@ -81,4 +81,7 @@ $(function(){
     });
     var summ = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() - 1) * $('.summ').data('guests');
     $('.summ').html('$' + summ);
+    $('.surfboard-box__circle').on('click', function(){
+      $(this).toggleClass('active');
+    });
 });
